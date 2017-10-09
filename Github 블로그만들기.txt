@@ -1,0 +1,147 @@
+> 깃허브 사용
+
+1. 윈도우용 Git 설치
+http://recoveryman.tistory.com/250
+
+2. Git 다운로드 후 설치
+
+3. Github 아이디 생성, 테스트
+http://recoveryman.tistory.com/251
+
+4. Github Desktop 설치
+https://desktop.github.com/
+
+5. Git GUI 활용
+데스크탑에 repository로 활용할 폴더 생성
+Create New Repository 에서 생성한 폴더를 지정 후 오픈
+test.txt 파일 생성 후 First Commit 테스트
+Git GUI 실행
+① Rescan
+② Stage Changed
+③ Commit
+④ Push
+⑤ User Name and Password 입력
+
+> 깃허브 블로그 만들기
+
+1. Jekyll 설치준비
+http://tech.whatap.io/2015/09/11/install-jekyll-on-windows/
+
+- 루비설치
+https://rubyinstaller.org/downloads/
+
+- Development Kit 설치
+http://rubyinstaller.org/downloads/
+2.0 새 2.3 이라서 pass. 2.4를 설치했음.
+
+- Jekyll 설치하기
+cmd 창에서 gem install jekyll 실행
+
+cmd 창에서 gem install rouge 실행
+(code blocks 사용위함)
+
+- Python 설치
+https://www.python.org/downloads/
+3.6 보다 2.7 설치 권장
+
+ : 3.6 설치 후 에러 해결방법
+   https://helpx.adobe.com/kr/creative-cloud/kb/error_on_launch.html
+
+ : wusa.exe 실행 에러
+   해결하지 못해 윈도우 업데이트 실행
+
+but, jekyll은 실행됨.
+
+- Pygments 설치
+pip install Pygments
+
+- wdm 설치
+gem install wdm
+
+- MSYS2를 찾을 수 없음.
+ : run 'ridk install'
+ : console 창에서 설치하다가 윈도우 창이 뜸.
+ : 1,2,3 모두 설치
+
+- 다시 wdm 설치
+gem install wdm
+
+2. jekyll 실행
+jekyll serve 실행
+브라우저에서 http://127.0.0.1:4000 접속
+유후~
+
+3. jekyll 사이트 생성하기
+
+- 생성 명령어 실행
+새로운 cmd 창을 열고
+jekyll new "blog 경로" 실행
+(서버 cmd 창에 뭔가 실행되는 로그를 확인할 수 있음.)
+but, 블로그 내용과 달리 생성되는 파일이 다름.
+
+- 환경설정하기
+ : _config.yml 에 syntax highlighting 과 UTF-8 사용가능 설정
+
+---------------------------------------------------------------
+
+> 지킬로 깃허브에 무료 블로그 만들기
+https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/
+
+※bundler 관련 에러 발생시
+C:/Ruby24/lib/ruby/2.4.0/rubygems/core_ext/kernel_require.rb:55:in `require': ca
+nnot load such file -- bundler (LoadError)
+
+ : gem install bundler 실행
+
+※minima 관련 에러 발생시
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/bundler-1.15.4/lib/bundler/resolver.rb:396:in
+ `block in verify_gemfile_dependencies_are_found!': Could not find gem 'minima (
+~> 2.0) x86-mingw32' in any of the gem sources listed in your Gemfile. (Bundler:
+:GemNotFound)
+
+※jekyll이 실행되지 않을 경우,
+jekyll uninstrall : gem uni jekyll
+재설치 : gem install jekyll
+gem install rouge
+gem install wdm
+
+1. jekyll 블로그 생성
+
+jekyll 프로젝트 생성
+jekyll new cremazer.github.io
+cd cremazer.github.io
+jekyll serve
+브라우저에서 http://127.0.0.1:4000 접속
+
+2. github 배포
+
+배포 전 github에 repository를 생성해야 함.
+Git GUI 활용하여 repository에 배포
+
+아... http://cremazer.github.io/pages 404 에러.
+
+3. Setting
+GitHub Pages - source 를 소유자로 변경해야 배포 완료.
+참고 : http://blog.hyeyoonjung.com/2017/05/22/how-to-write-posts/
+
+4. 접속
+http://cremazer.github.io/pages 성공
+
+5. CSS 미적용 시 참고
+https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/
+
+---------------------------------------------------------------
+
+> 블로그 포스트 추가
+https://nolboo.kim/blog/2013/10/15/free-blog-with-github-jekyll/
+
+
+> Github 배포하기
+Git Bash 사용
+$ git init  // 깃 명령어를 사용할 수 있는 디렉토리로 만든다.
+$ git status  // 현재 상태를 훑어보고
+$ git remote add pages https://github.com/cremazer/pages.git  // 로컬과 원격 저장소를 연결한다.
+$ git add .  // 이 명령은 현재 디렉토리의 모든 화일을 추가할 수 있다.
+$ git commit -m "message"  // 커밋해서 스냅샷을 찍는다.
+$ git push pages master  // 깃허브로 푸시한다.
+
