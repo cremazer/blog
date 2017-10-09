@@ -1,0 +1,14 @@
+참고
+http://my2kong.net/2016/07/07/jekyll-blogging-theme/
+
+theme download
+https://github.com/codinfox/codinfox-lanyon
+
+_config.yml 파일 설정
+
+jekyll serve  실행
+> jekyll 3.6.0 | Error:  jekyll-paginate  메시지 확인
+
+gem install github-pages 실행
+...오래걸린다.
+
