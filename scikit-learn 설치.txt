@@ -1,0 +1,156 @@
+참고 : https://tensorflow.blog/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/
+https://tensorflow.blog/파이썬-머신러닝/
+
+--파이썬 3.6 설치
+https://www.python.org/downloads/release/python-363/
+C Runtime Update (KB2999226) 이후 설치진행 안됨.
+3.5.4 설치
+https://www.python.org/downloads/release/python-354/
+
+--아나콘다, 텐서플로우, 사이킷런 패키지 설치
+참고 : 
+https://brunch.co.kr/@mapthecity/15
+
+덧 : 
+1. anaconda이든 python이든 둘중에 하나만 설치해되고, 전자가 좀 더 수월합니다. 아나콘다는 numpy 등 각종 scientific package들이 디폴트로 같이 들어 있는 파이선 이라 생각하시면 됩니다. 
+2. pycharm같은 IDE를 쓰시는 분들은 세팅에서 python interpreter 패스를 설정해주셔야됩니다. 
+3. tensorflow 윈도우용으로 현재 python 3.5 와 3.6 지원됩니다. https://pypi.python.org/pypi/tensorflow 
+4. TF 설치를 햇음에도 불구하고 ImportError: No module named 'tensorflow' 의 애러의 경우는 보통 여기 나와 있는 매뉴얼 python을 두개를 설치하게 되어 있어서 문제가 생겼을 확률이 큽니다. 즉 #1에서 언급된 바와 같이 두개 모두를 설치했을 경우 아나콘다 파이선이 아닌 일반 파이선 설치 경로로 파이선이 되어 있는 경우일 확률이 크죠. 설치는 실제 아나콘다 파이선으로 될을 거라서요. 
+5. 여기 나와있는 TF는 CUDA enable된 것이 아니라.. Nvidia GPU가 있는 경우 CUDA가 enable된 tensorflow 설치를 권장합니다. Training과 Inferencing에 성능 차이가 많이 납니다.
+
+
+--아나콘다 설치
+https://www.continuum.io/downloads
+download the most recent Anaconda that included Python 3.5 by default, Anaconda 4.2.0.
+https://repo.continuum.io/archive/
+
+--pip 업그레이드
+python -m pip install --upgrade pip
+
+--Conda 환경 만들기
+conda create -n tensorflow python=3.5
+Proceed y
+
+--TensorFlow 설치
+참고 : 
+https://www.tensorflow.org/install/install_windows
+
+To install the GPU version of TensorFlow, enter the following command:
+> pip3 install --upgrade tensorflow-gpu
+
+Installing with Anaconda
+1. Follow the instructions on the Anaconda download site to download and install Anaconda.
+2. Create a conda environment named tensorflow by invoking the following command:
+
+C:> conda create -n tensorflow python=3.5 
+3. Activate the conda environment by issuing the following command:
+
+C:> activate tensorflow
+ (tensorflow)C:>  # Your prompt should change 
+4. Issue the appropriate command to install TensorFlow inside your conda environment. To install the CPU-only version of TensorFlow, enter the following command:
+
+(tensorflow)C:> pip install --ignore-installed --upgrade tensorflow 
+To install the GPU version of TensorFlow, enter the following command (on a single line):
+
+(tensorflow)C:> pip install --ignore-installed --upgrade tensorflow-gpu
+
+--install log
+Collecting tensorflow-gpu
+  Downloading tensorflow_gpu-1.3.0-cp35-cp35m-win_amd64.whl (60.0MB)
+    100% |################################| 60.0MB 11kB/s
+Collecting protobuf>=3.3.0 (from tensorflow-gpu)
+  Downloading protobuf-3.4.0-py2.py3-none-any.whl (375kB)
+    100% |################################| 378kB 459kB/s
+Collecting wheel>=0.26 (from tensorflow-gpu)
+  Downloading wheel-0.30.0-py2.py3-none-any.whl (49kB)
+    100% |################################| 51kB 2.7MB/s
+Collecting tensorflow-tensorboard<0.2.0,>=0.1.0 (from tensorflow-gpu)
+  Downloading tensorflow_tensorboard-0.1.8-py3-none-any.whl (1.6MB)
+    100% |################################| 1.6MB 404kB/s
+Collecting six>=1.10.0 (from tensorflow-gpu)
+  Downloading six-1.11.0-py2.py3-none-any.whl
+Collecting numpy>=1.11.0 (from tensorflow-gpu)
+  Downloading numpy-1.13.3-cp35-none-win_amd64.whl (13.1MB)
+    100% |################################| 13.1MB 54kB/s
+Collecting setuptools (from protobuf>=3.3.0->tensorflow-gpu)
+  Downloading setuptools-36.5.0-py2.py3-none-any.whl (478kB)
+    100% |################################| 481kB 1.1MB/s
+Collecting html5lib==0.9999999 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tenso
+rflow-gpu)
+  Downloading html5lib-0.9999999.tar.gz (889kB)
+    100% |################################| 890kB 669kB/s
+Collecting markdown>=2.6.8 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflo
+w-gpu)
+  Downloading Markdown-2.6.9.tar.gz (271kB)
+    100% |################################| 276kB 1.8MB/s
+Collecting bleach==1.5.0 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorflow-
+gpu)
+  Downloading bleach-1.5.0-py2.py3-none-any.whl
+Collecting werkzeug>=0.11.10 (from tensorflow-tensorboard<0.2.0,>=0.1.0->tensorf
+low-gpu)
+  Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB)
+    100% |################################| 317kB 1.5MB/s
+Building wheels for collected packages: html5lib, markdown
+  Running setup.py bdist_wheel for html5lib ... done
+  Stored in directory: C:\Users\k\AppData\Local\pip\Cache\wheels\6f\85\6c\56b8e1
+292c6214c4eb73b9dda50f53e8e977bf65989373c962
+  Running setup.py bdist_wheel for markdown ... done
+  Stored in directory: C:\Users\k\AppData\Local\pip\Cache\wheels\bf\46\10\c93e17
+ae86ae3b3a919c7b39dad3b5ccf09aeb066419e5c1e5
+Successfully built html5lib markdown
+Installing collected packages: setuptools, six, protobuf, wheel, html5lib, markd
+own, bleach, numpy, werkzeug, tensorflow-tensorboard, tensorflow-gpu
+Successfully installed bleach-1.5.0 html5lib-0.9999999 markdown-2.6.9 numpy-1.13
+.3 protobuf-3.4.0 setuptools-36.5.0 six-1.11.0 tensorflow-gpu-1.3.0 tensorflow-t
+ensorboard-0.1.8 werkzeug-0.12.2 wheel-0.30.0
+
+
+--테스트
+> python
+> import tensorflow as tf
+ImportError: DLL load failed: 지정된 프로시저를 찾을 수 없습니다.
+ImportError: No module named '_pywrap_tensorflow_internal'
+ImportError: DLL load failed: 지정된 프로시저를 찾을 수 없습니다.
+ImportError: No module named '_pywrap_tensorflow_internal'
+
+텐서플로우(TensorFlow) GPU버전(Tensorflow-Gpu) 설치하기 (2017년 5월 30일 by Solaris)
+http://solarisailab.com/archives/1581
+
+
+GPU 지원으로 TensorFlow를 실행하기위한 요구 사항
+
+이 안내서에 설명 된 메커니즘 중 하나를 사용하여 GPU를 지원하는 TensorFlow를 설치하는 경우 시스템에 다음 NVIDIA 소프트웨어가 설치되어 있어야합니다.
+
+CUDA® 툴킷 8.0. 자세한 내용은 NVIDIA 설명서를 참조하십시오. NVIDIA 설명서에 설명 된대로 % PATH % 환경 변수에 관련 Cuda 경로 이름을 추가했는지 확인하십시오.
+CUDA 툴킷 8.0과 관련된 NVIDIA 드라이버.
+cuDNN v6 또는 v6.1. 자세한 내용은 NVIDIA 설명서를 참조하십시오. cuDNN은 일반적으로 다른 CUDA DLL과 다른 위치에 설치됩니다. cuDNN DLL을 설치 한 디렉토리를 % PATH % 환경 변수에 추가했는지 확인하십시오.
+CUDA Compute Capability 3.0 이상의 GPU 카드. 지원되는 GPU 카드 목록은 NVIDIA 설명서를 참조하십시오.
+
+위 패키지 중 하나와 다른 버전을 사용하는 경우 지정한 버전으로 변경하십시오. 특히, cuDNN 버전은 정확히 일치해야합니다. cuDNN64_6.dll을 찾을 수 없으면 TensorFlow가로드되지 않습니다. 다른 버전의 cuDNN을 사용하려면 소스에서 빌드해야합니다.
+
+
+http://www.geeks3d.com/20100606/gpu-computing-nvidia-cuda-compute-capability-comparative-table/
+                      Multiprocessors	CUDA cores	Compute Capability
+GeForce GTS 250	      16		128		1.1
+GPU 사용 불가
+
+$ pip uninstall tensorflow-gpu
+
+CPU ONLY Tensorflow 설치
+> activate tensorflow
+> pip install --ignore-installed --upgrade tensorflow
+
+
+$ pip install numpy scipy sklearn pandas
+
+--사이킷런 업데이트
+$ pip install --upgrade scikit-learn
+
+Collecting scikit-learn
+  Using cached scikit_learn-0.19.0-cp35-cp35m-win_amd64.whl
+Installing collected packages: scikit-learn
+Successfully installed scikit-learn-0.19.0
+
+
+IDE 툴은 PyCharm 보다 Jupyter Notebook 사용
+※ 아나콘다를 설치하면 자동으로 설치됨.
