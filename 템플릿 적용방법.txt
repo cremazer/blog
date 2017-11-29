@@ -1,0 +1,74 @@
+1. google 실행
+http://recoveryman.tistory.com/321
+
+git config --global user.name "cremazer"
+git config --global user.email "cremazer@gmail.com"
+
+출처: http://recoveryman.tistory.com/321 [회복맨 블로그]
+
+
+2. http://recoveryman.tistory.com/322?category=635733
+CSS 적용 처리 (장민석 지원)
+
+3. http://recoveryman.tistory.com/323?category=635733
+하루패드 사용해서 마크다운 사용 (포스팅 할 때)
+
+
+4. git bash
+실행
+아래의 폴더를 미리 생성해야 함.
+D:\github\blog
+
+cd d:/
+cd github
+cd blog
+git clone https://github.com/cremazer/cremazer.github.io
+
+그러면 copy 가 됨.
+
+순서대로 따라할 것.
+마지막에 git push 하면 배포완료.
+
+5. 댓글 플러그인 위치 설정
+- 테마가 달라서 설정위치가 다름.(장민석)
+
+MinSJang.github.io/_includes/disqus.html 파일 만들어서 추가해야함.
+
+MinSJang.github.io/_layouts/post.html 이 파일도 수정해야함.
+MinSJang.github.io/_includes/comments.html 파일도 수정해야 함.
+
+
+5-1. 왼쪽 메뉴 설정
+_config.yml 파일
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+
+5-2. 글쓴이 이미지 변경
+
+cremazer.github.io/_includes/author.html
+
+
+글쓴이 인사말 변경
+_config.yml 파일
+# User Settings
+username: Aristel
+user_description: Hi~ Nice meet you (user_description)
+disqus_username: disqus_username (disqus_username)
+
+
+5-3. 이미지 설정
+
+https://minsjang.github.io/
+https://github.com/minsjang/minsjang.github.io/
+
+MinSJang.github.io/assets/image/ 폴더를 생성해야함. 참고할 것.
+MinSJang.github.io/_includes/footer.html 소셜에 추가할 경우 참고할 것.
+
