@@ -1,22 +1,22 @@
-1. google ½ÇÇà
+1. google ì‹¤í–‰
 http://recoveryman.tistory.com/321
 
 git config --global user.name "cremazer"
 git config --global user.email "cremazer@gmail.com"
 
-ÃâÃ³: http://recoveryman.tistory.com/321 [È¸º¹¸Ç ºí·Î±×]
+ì¶œì²˜: http://recoveryman.tistory.com/321 [íšŒë³µë§¨ ë¸”ë¡œê·¸]
 
 
 2. http://recoveryman.tistory.com/322?category=635733
-CSS Àû¿ë Ã³¸® (Àå¹Î¼® Áö¿ø)
+CSS ì ìš© ì²˜ë¦¬ (ì¥ë¯¼ì„ ì§€ì›)
 
 3. http://recoveryman.tistory.com/323?category=635733
-ÇÏ·çÆĞµå »ç¿ëÇØ¼­ ¸¶Å©´Ù¿î »ç¿ë (Æ÷½ºÆÃ ÇÒ ¶§)
+í•˜ë£¨íŒ¨ë“œ ì‚¬ìš©í•´ì„œ ë§ˆí¬ë‹¤ìš´ ì‚¬ìš© (í¬ìŠ¤íŒ… í•  ë•Œ)
 
 
 4. git bash
-½ÇÇà
-¾Æ·¡ÀÇ Æú´õ¸¦ ¹Ì¸® »ı¼ºÇØ¾ß ÇÔ.
+ì‹¤í–‰
+ì•„ë˜ì˜ í´ë”ë¥¼ ë¯¸ë¦¬ ìƒì„±í•´ì•¼ í•¨.
 D:\github\blog
 
 cd d:/
@@ -24,22 +24,26 @@ cd github
 cd blog
 git clone https://github.com/cremazer/cremazer.github.io
 
-±×·¯¸é copy °¡ µÊ.
+ê·¸ëŸ¬ë©´ copy ê°€ ë¨.
 
-¼ø¼­´ë·Î µû¶óÇÒ °Í.
-¸¶Áö¸·¿¡ git push ÇÏ¸é ¹èÆ÷¿Ï·á.
+ìˆœì„œëŒ€ë¡œ ë”°ë¼í•  ê²ƒ.
+ë§ˆì§€ë§‰ì— git push í•˜ë©´ ë°°í¬ì™„ë£Œ.
 
-5. ´ñ±Û ÇÃ·¯±×ÀÎ À§Ä¡ ¼³Á¤
-- Å×¸¶°¡ ´Ş¶ó¼­ ¼³Á¤À§Ä¡°¡ ´Ù¸§.(Àå¹Î¼®)
+5. ëŒ“ê¸€ í”ŒëŸ¬ê·¸ì¸ ìœ„ì¹˜ ì„¤ì •
+- í…Œë§ˆê°€ ë‹¬ë¼ì„œ ì„¤ì •ìœ„ì¹˜ê°€ ë‹¤ë¦„.(ì¥ë¯¼ì„)
 
-MinSJang.github.io/_includes/disqus.html ÆÄÀÏ ¸¸µé¾î¼­ Ãß°¡ÇØ¾ßÇÔ.
+MinSJang.github.io/_includes/disqus.html íŒŒì¼ ë§Œë“¤ì–´ì„œ ì¶”ê°€í•´ì•¼í•¨.
 
-MinSJang.github.io/_layouts/post.html ÀÌ ÆÄÀÏµµ ¼öÁ¤ÇØ¾ßÇÔ.
-MinSJang.github.io/_includes/comments.html ÆÄÀÏµµ ¼öÁ¤ÇØ¾ß ÇÔ.
+MinSJang.github.io/_layouts/post.html ì´ íŒŒì¼ë„ ìˆ˜ì •í•´ì•¼í•¨.
+MinSJang.github.io/_includes/comments.html íŒŒì¼ë„ ìˆ˜ì •í•´ì•¼ í•¨.
+
+6. git UIë¡œ Push í•  ë•Œ ì—ëŸ¬ë°œìƒ
+ì°¸ê³ 
+http://mobicon.tistory.com/162
 
 
-5-1. ¿ŞÂÊ ¸Ş´º ¼³Á¤
-_config.yml ÆÄÀÏ
+5-1. ì™¼ìª½ ë©”ë‰´ ì„¤ì •
+_config.yml íŒŒì¼
 
 # Links to include in menu navigation
 # For external links add external: true
@@ -51,24 +55,24 @@ links:
   - title: Contact
     url: /contact/
 
-5-2. ±Û¾´ÀÌ ÀÌ¹ÌÁö º¯°æ
+5-2. ê¸€ì“´ì´ ì´ë¯¸ì§€ ë³€ê²½
 
 cremazer.github.io/_includes/author.html
 
 
-±Û¾´ÀÌ ÀÎ»ç¸» º¯°æ
-_config.yml ÆÄÀÏ
+ê¸€ì“´ì´ ì¸ì‚¬ë§ ë³€ê²½
+_config.yml íŒŒì¼
 # User Settings
 username: Aristel
 user_description: Hi~ Nice meet you (user_description)
 disqus_username: disqus_username (disqus_username)
 
 
-5-3. ÀÌ¹ÌÁö ¼³Á¤
+5-3. ì´ë¯¸ì§€ ì„¤ì •
 
 https://minsjang.github.io/
 https://github.com/minsjang/minsjang.github.io/
 
-MinSJang.github.io/assets/image/ Æú´õ¸¦ »ı¼ºÇØ¾ßÇÔ. Âü°íÇÒ °Í.
-MinSJang.github.io/_includes/footer.html ¼Ò¼È¿¡ Ãß°¡ÇÒ °æ¿ì Âü°íÇÒ °Í.
+MinSJang.github.io/assets/image/ í´ë”ë¥¼ ìƒì„±í•´ì•¼í•¨. ì°¸ê³ í•  ê²ƒ.
+MinSJang.github.io/_includes/footer.html ì†Œì…œì— ì¶”ê°€í•  ê²½ìš° ì°¸ê³ í•  ê²ƒ.
 
