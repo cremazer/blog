@@ -37,11 +37,6 @@ MinSJang.github.io/_includes/disqus.html 파일 만들어서 추가해야함.
 MinSJang.github.io/_layouts/post.html 이 파일도 수정해야함.
 MinSJang.github.io/_includes/comments.html 파일도 수정해야 함.
 
-6. git UI로 Push 할 때 에러발생
-참고
-http://mobicon.tistory.com/162
-
-
 5-1. 왼쪽 메뉴 설정
 _config.yml 파일
 
@@ -75,4 +70,29 @@ https://github.com/minsjang/minsjang.github.io/
 
 MinSJang.github.io/assets/image/ 폴더를 생성해야함. 참고할 것.
 MinSJang.github.io/_includes/footer.html 소셜에 추가할 경우 참고할 것.
+
+6. git UI로 Push 할 때 에러발생
+참고
+http://mobicon.tistory.com/162
+
+6-1. 마크다운 참고
+http://sergeswin.com/1013
+https://gist.github.com/ihoneymon/652be052a0727ad59601
+
+7. category 추가
+root에 categoria 폴더 생성
+하위에 카테고리 타이틀 생성 (예:java)
+categoria/java/index.html 생성
+
+8. About page 내용 수정
+about.md 파일 수정
+
+9. Contact 테스트
+이메일 연동 후 확인해야함.
+
+10. readme 수정
+깃허브 블로그 donate 추가
+paypal 가입 후, 이메일 연동
+결제버튼 생성
+참고 https://gist.github.com/mw-ferretti/ed91db2c896bf91ecfe5
 
