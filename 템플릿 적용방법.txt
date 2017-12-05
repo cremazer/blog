@@ -99,3 +99,8 @@ paypal 가입 후, 이메일 연동
 11. 소셜로 URL 전달 시 링크이미지 변경
 JEKFLIX로 보여짐...
 /assets/img/blog-image.png 파일 변경해야함.
+
+12. 네이버 검색엔진 허용
+robots.txt 수정
+- Allow: / 추가
+참고 : http://webmastertool.naver.com/guide/site_check.naver#
