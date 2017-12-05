@@ -96,3 +96,6 @@ paypal 가입 후, 이메일 연동
 결제버튼 생성
 참고 https://gist.github.com/mw-ferretti/ed91db2c896bf91ecfe5
 
+11. 소셜로 URL 전달 시 링크이미지 변경
+JEKFLIX로 보여짐...
+/assets/img/blog-image.png 파일 변경해야함.
