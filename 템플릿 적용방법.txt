@@ -105,6 +105,8 @@ robots.txt 수정
 - Allow: / 추가
 참고 : http://webmastertool.naver.com/guide/site_check.naver#
 
+13. Syntax highlighting in markdown
+참고 : https://support.codebasehq.com/articles/tips-tricks/syntax-highlighting-in-markdown
 
 99 .주의사항
 post 작성 시
